@@ -1,15 +1,12 @@
 <template>
-  <Headline>Home</Headline>
+  <div class="container">
+    Content here
+  </div>
 </template>
 
 <script>
-import Headline from '@/components/layout/Headline.vue';
-
 export default {
-
   name: 'home',
-  components: {
-    Headline,
-  },
+  components: {},
 };
 </script>

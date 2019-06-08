@@ -1,13 +1,38 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Main Dashboard</router-link> |
-      <router-link to="/another">Another Dashboard</router-link>
-    </div>
+    <Title :title="$route.meta.title"></Title>
+
+    <!--<Navigation></Navigation>-->
+
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import Navigation from '@/components/layout/Navigation.vue';
+import Title from '@/components/layout/Title.vue';
 
+export default {
+  components: {
+    Navigation,
+    Title,
+  },
+};
+</script>
+
+<style lang="scss">
+  body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(233, 233, 233);
+    background: $defaultBackgroundColor;
+  }
+
+  .container {
+    //grid setting here
+  }
+
+  .module {
+    //grid item
+  }
 </style>

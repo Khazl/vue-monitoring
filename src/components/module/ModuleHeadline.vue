@@ -1,17 +1,17 @@
 <template>
   <h1>
-      <slot></slot>
+    <slot></slot>
   </h1>
 </template>
 
 <script>
 export default {
-  name: 'headline',
+  name: 'module-headline',
 };
 </script>
 
 <style lang="scss">
-h1 {
-    color: #f00;
-}
+  h1 {
+      color: #f00;
+  }
 </style>
