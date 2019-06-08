@@ -1,13 +1,12 @@
 <template>
-  <Headline>Home</Headline>
+  <Headline>Another</Headline>
 </template>
 
 <script>
 import Headline from '@/components/layout/Headline.vue';
 
 export default {
-
-  name: 'home',
+  name: 'another',
   components: {
     Headline,
   },
