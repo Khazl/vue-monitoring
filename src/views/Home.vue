@@ -5,6 +5,10 @@
     <div class="module">Hello</div>
     <div class="module">Hello</div>
     <div class="module">Hello</div>
+    <div class="module">Hello</div>
+    <div class="module">Hello</div>
+    <div class="module">Hello</div>
+    <div class="module">Hello</div>
   </Container>
 </template>
 

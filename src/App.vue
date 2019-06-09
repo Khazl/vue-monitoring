@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <Title :title="$route.meta.title"></Title>
-
-    <!--<Navigation></Navigation>-->
-
+    <Navigation></Navigation>
     <router-view/>
   </div>
 </template>
@@ -26,5 +24,9 @@ export default {
     font-family: Helvetica, Arial, sans-serif;
     color: rgb(233, 233, 233);
     background: $defaultBackgroundColor;
+  }
+
+  #app {
+    position: relative;
   }
 </style>
