@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Title :title="$route.meta.title"></Title>
+    <DashboardTitle :title="$route.meta.title"></DashboardTitle>
     <Navigation></Navigation>
     <router-view/>
   </div>
@@ -8,12 +8,12 @@
 
 <script>
 import Navigation from '@/components/layout/Navigation.vue';
-import Title from '@/components/layout/Title.vue';
+import DashboardTitle from '@/components/layout/DashboardTitle.vue';
 
 export default {
   components: {
     Navigation,
-    Title,
+    DashboardTitle,
   },
 };
 </script>

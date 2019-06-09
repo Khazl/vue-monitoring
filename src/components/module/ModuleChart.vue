@@ -17,15 +17,15 @@
 </template>
 
 <script>
-import BarChart from './charts/BarChart.vue';
-import HorizontalBarChart from './charts/HorizontalBarChart.vue';
-import DoughnutChart from './charts/DoughnutChart.vue';
-import LineChart from './charts/LineChart.vue';
-import PieChart from './charts/PieChart.vue';
-import PolarAreaChart from './charts/PolarAreaChart.vue';
-import RadarChart from './charts/RadarChart.vue';
-import BubbleChart from './charts/BubbleChart.vue';
-import ScatterChart from './charts/ScatterChart.vue';
+import BarChart from '@/components/module/charts/BarChart.vue';
+import HorizontalBarChart from '@/components/module/charts/HorizontalBarChart.vue';
+import DoughnutChart from '@/components/module/charts/DoughnutChart.vue';
+import LineChart from '@/components/module/charts/LineChart.vue';
+import PieChart from '@/components/module/charts/PieChart.vue';
+import PolarAreaChart from '@/components/module/charts/PolarAreaChart.vue';
+import RadarChart from '@/components/module/charts/RadarChart.vue';
+import BubbleChart from '@/components/module/charts/BubbleChart.vue';
+import ScatterChart from '@/components/module/charts/ScatterChart.vue';
 
 export default {
   name: 'module-chart',
