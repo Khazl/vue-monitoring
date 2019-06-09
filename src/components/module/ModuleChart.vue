@@ -1,17 +1,7 @@
 <template>
   <div class="small">
+    <component :is="design + '-chart'" :chart-data="datacollection"></component>
 
-    <bar-chart v-if="design === 'bar'" :chart-data="datacollection"></bar-chart>
-    <horizontal-bar-chart v-if="design === 'barHor'" :chart-data="datacollection">
-    </horizontal-bar-chart>
-    <doughnut-chart v-if="design === 'doughnut'" :chart-data="datacollection"></doughnut-chart>
-    <line-chart v-if="design === 'line'" :chart-data="datacollection"></line-chart>
-    <pie-chart v-if="design === 'pie'" :chart-data="datacollection"></pie-chart>
-    <polar-area-chart v-if="design === 'polar-area'" :chart-data="datacollection">
-    </polar-area-chart>
-    <radar-chart v-if="design === 'radar'" :chart-data="datacollection"></radar-chart>
-    <bubble-chart v-if="design === 'bubble'" :chart-data="datacollection"></bubble-chart>
-    <scatter-chart v-if="design === 'scatter'" :chart-data="datacollection"></scatter-chart>
     <button @click="fillData()">Randomize</button>
   </div>
 </template>

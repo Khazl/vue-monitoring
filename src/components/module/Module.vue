@@ -14,7 +14,7 @@ export default {
         headline: String,
         design: {
             type: String,
-            validator: val => ['bar', 'barHor', 'doughnut', 'line', 'pie', 'polar-area', 'radar', 'bubble', 'scatter'].includes(val),
+            validator: val => ['bar', 'horizontal-bar', 'doughnut', 'line', 'pie', 'polar-area', 'radar', 'bubble', 'scatter'].includes(val),
         }
     },
     components: {
