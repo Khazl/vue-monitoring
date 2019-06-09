@@ -1,12 +1,16 @@
 <template>
-  <div class="container">
-    Content here
-  </div>
+  <Container layout="layout-1">
+    Hi
+  </Container>
 </template>
 
 <script>
+import Container from '@/components/layout/Container.vue';
+
 export default {
   name: 'home',
-  components: {},
+  components: {
+    Container,
+  },
 };
 </script>

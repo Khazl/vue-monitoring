@@ -28,10 +28,6 @@ export default {
     background: $defaultBackgroundColor;
   }
 
-  .container {
-    //grid setting here
-  }
-
   .module {
     //grid item
   }
