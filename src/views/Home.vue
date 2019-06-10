@@ -1,8 +1,9 @@
 <template>
   <Container layout="layout-1">
-    <Module headline="Hello 1" :design="chart"></Module>
-    <Module headline="Hello 2" :design="chart"></Module>
+    <Module headline="Hello 1" :design="chartRandomizer"></Module>
+    <Module headline="Hello 2" :design="chartRandomizer"></Module>
     <Module headline="Hello 3" :design="chart"></Module>
+    <Module headline="Hello 4" :design="chart"></Module>
 
     <div class="module">Hello</div>
     <div class="module">Hello</div>
@@ -39,6 +40,11 @@ export default {
     return {
       chart: undefined,
     };
+  },
+  computed: {
+    chartRandomizer() {
+      return charts[Math.floor(Math.random() * charts.length)];
+    },
   },
   mounted() {
     this.getDesign();
