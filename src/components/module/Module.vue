@@ -9,17 +9,17 @@
 import ModuleChart from '@/components/module/ModuleChart.vue';
 
 export default {
-    name: 'module',
-    props: {
-        headline: String,
-        design: {
-            type: String,
-            validator: val => ['bar', 'horizontal-bar', 'doughnut', 'line', 'pie', 'polar-area', 'radar', 'bubble', 'scatter'].includes(val),
-        }
+  name: 'module',
+  props: {
+    headline: String,
+    design: {
+      type: String,
+      validator: val => ['bar', 'horizontal-bar', 'doughnut', 'line', 'pie', 'polar-area', 'radar', 'bubble', 'scatter'].includes(val),
     },
-    components: {
-        ModuleChart,
-    }
+  },
+  components: {
+    ModuleChart,
+  },
 };
 </script>
 

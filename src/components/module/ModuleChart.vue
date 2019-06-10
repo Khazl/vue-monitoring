@@ -1,6 +1,6 @@
 <template>
   <div class="small">
-    <component :is="design + '-chart'" :chart-data="datacollection"></component>
+    <component :is="design + '-chart'" :chart-data="data"></component>
 
     <button @click="fillData()">Randomize</button>
   </div>
@@ -16,6 +16,17 @@ import PolarAreaChart from '@/components/module/charts/PolarAreaChart.vue';
 import RadarChart from '@/components/module/charts/RadarChart.vue';
 import BubbleChart from '@/components/module/charts/BubbleChart.vue';
 import ScatterChart from '@/components/module/charts/ScatterChart.vue';
+
+const colors = [
+  '#ffff00',
+  '#00ffff',
+  '#ff00ff',
+  '#0000ff',
+  '#00ff00',
+  '#ff0000',
+  '#ffffff',
+  '#000000',
+];
 
 export default {
   name: 'module-chart',
@@ -37,7 +48,7 @@ export default {
   },
   data() {
     return {
-      datacollection: null,
+      data: undefined,
     };
   },
   mounted() {
@@ -45,16 +56,16 @@ export default {
   },
   methods: {
     fillData() {
-      this.datacollection = {
+      this.data = {
         labels: [this.getRandomInt(), this.getRandomInt()],
         datasets: [
           {
             label: 'Data One',
-            backgroundColor: '#ffff00',
+            backgroundColor: colors[Math.floor(Math.random() * colors.length)],
             data: [this.getRandomInt(), this.getRandomInt()],
           }, {
             label: 'Data One',
-            backgroundColor: '#00ffff',
+            backgroundColor: colors[Math.floor(Math.random() * colors.length)],
             data: [this.getRandomInt(), this.getRandomInt()],
           },
         ],

@@ -7,9 +7,18 @@ export default {
   name: 'scatter-chart',
   extends: Scatter,
   mixins: [reactiveProp],
-  props: ['chartdata', 'options'],
+  props: {
+    chartData: {
+      type: Object,
+      default: null,
+    },
+    options: {
+      type: Object,
+      default: null,
+    },
+  },
   mounted() {
-    this.renderChart(this.chartdata, this.options);
+    this.renderChart(this.chartData, this.options);
   },
 };
 </script>
