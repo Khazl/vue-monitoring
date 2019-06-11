@@ -1,34 +1,37 @@
 <template>
   <Container layout="layout-1">
-    <Module headline="Hello 1" :design="chartRandomizer"></Module>
-    <Module headline="Hello 2" :design="chartRandomizer"></Module>
-    <Module headline="Hello 3" :design="chart"></Module>
-    <Module headline="Hello 4" :design="chart"></Module>
+    <Module class="first" headline="Hello 1" chartDesign="line" :chartData="chartData">
+      <template  v-slot:content>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </template>
+    </Module>
+    <Module class="second" headline="Hello 2"></Module>
+    <Module class="third" headline="Hello 3"></Module>
+    <Module class="fourth" headline="Hello 4"></Module>
 
-    <div class="module">Hello</div>
-    <div class="module">Hello</div>
-    <div class="module">Hello</div>
-    <div class="module">Hello</div>
-    <div class="module">Hello</div>
-    <div class="module">Hello</div>
+    <Module class="fifth" headline="Hello 5"></Module>
+    <Module class="sixth" headline="Hello 6">
+      <template  v-slot:content>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </template>
+    </Module>
+
   </Container>
 </template>
 
 <script>
 import Container from '@/components/layout/Container.vue';
 import Module from '@/components/module/Module.vue';
-
-const charts = [
-  'bar',
-  'horizontal-bar',
-  'doughnut',
-  'line',
-  'pie',
-  'polar-area',
-  'radar',
-  'bubble',
-  'scatter',
-];
 
 export default {
   name: 'home',
@@ -38,21 +41,8 @@ export default {
   },
   data() {
     return {
-      chart: undefined,
+      chartData: '',
     };
-  },
-  computed: {
-    chartRandomizer() {
-      return charts[Math.floor(Math.random() * charts.length)];
-    },
-  },
-  mounted() {
-    this.getDesign();
-  },
-  methods: {
-    getDesign() {
-      this.chart = charts[Math.floor(Math.random() * charts.length)];
-    },
   },
 };
 </script>
