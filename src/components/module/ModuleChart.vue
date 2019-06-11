@@ -2,7 +2,7 @@
   <div class="small">
     <component :is="design + '-chart'" :chart-data="datacollection"></component>
 
-    <button @click="fillData()">Randomize</button>
+    <!--<button @click="fillData()">Randomize</button>-->
   </div>
 </template>
 
@@ -50,11 +50,17 @@ export default {
         datasets: [
           {
             label: 'Data One',
-            backgroundColor: '#ffff00',
+            backgroundColor: '#FCD116',
             data: [this.getRandomInt(), this.getRandomInt()],
-          }, {
+          }, 
+          {
             label: 'Data One',
-            backgroundColor: '#00ffff',
+            backgroundColor: '#DD473A',
+            data: [this.getRandomInt(), this.getRandomInt()],
+          },
+          {
+            label: 'Data One',
+            backgroundColor: '#4C73BE',
             data: [this.getRandomInt(), this.getRandomInt()],
           },
         ],
@@ -69,7 +75,6 @@ export default {
 
 <style>
   .small {
-    max-width: 600px;
-    margin:  150px auto;
+    margin-top: 1rem;
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <h1>
+  <h2>
     <slot></slot>
-  </h1>
+  </h2>
 </template>
 
 <script>
@@ -10,8 +10,11 @@ export default {
 };
 </script>
 
-<style lang="scss">
-  h1 {
-      color: #f00;
+<style scoped lang="scss">
+  h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 200;
+    opacity: .5;
   }
 </style>

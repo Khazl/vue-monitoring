@@ -1,8 +1,8 @@
 <template>
   <Container layout="layout-1">
-    <Module headline="Hello 1" design="line"></Module>
-    <Module headline="Hello 2" design="bar"></Module>
-    <Module headline="Hello 3" design="doughnut"></Module>
+    <Module headline="Hello 1" chart="line"></Module>
+    <Module headline="Hello 2" chart="bar"></Module>
+    <Module headline="Hello 3"></Module>
 
     <div class="module">Hello</div>
     <div class="module">Hello</div>
